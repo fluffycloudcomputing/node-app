@@ -1,5 +1,5 @@
 version: 0.2
-        
+
 phases:
   install:
     runtime-versions:
@@ -9,7 +9,7 @@ phases:
       - npm install
   build:
     commands:
-      - npm run test
+      - CI=true npm test
 artifacts:
   files:
     - "**/*"
